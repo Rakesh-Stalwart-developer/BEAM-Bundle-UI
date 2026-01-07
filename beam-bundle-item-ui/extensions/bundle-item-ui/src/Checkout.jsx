@@ -58,7 +58,6 @@ function Extension() {
 
       const refs =
         result?.data?.product?.metafield?.references?.nodes || [];
-
       const unique = Array.from(
         new Map(refs.map(i => [i.id, i])).values()
       );
